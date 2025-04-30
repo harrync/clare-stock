@@ -92,7 +92,7 @@ export default function CSVComparator() {
 
       <div className="space-y-2 flex flex-col gap-4">
         <label className="flex flex-col gap-2">
-          Stock count CSV:
+          "STOCKCOUNT WITH PLU" CSV:
           <input
             type="file"
             accept=".csv"
@@ -101,7 +101,7 @@ export default function CSVComparator() {
           />
         </label>
         <label className="flex flex-col gap-2">
-          Stock Costs CSV:
+          "STOCK COSTS" CSV:
           <input
             type="file"
             accept=".csv"
@@ -115,7 +115,7 @@ export default function CSVComparator() {
         onClick={computeTotalStockValue}
         className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-200"
       >
-        Compute Total Stock Value
+        Crunch dem numbers!
       </button>
 
       {computedResults.length > 0 && (
